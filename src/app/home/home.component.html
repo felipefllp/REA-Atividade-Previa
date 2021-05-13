@@ -1,0 +1,22 @@
+<header class="header">
+  <h1>Atividade Prévia</h1>
+  <h2>REA - Desenvolvimento Reativo</h2>
+  <h3>Felipe Barbosa Lopes</h3>
+</header>
+
+<main>
+  <div class="title">
+    Filtragem de Consoantes a Partir de Determinado Texto
+  </div>
+
+  <input 
+    class="input"
+    type="text"
+    [(ngModel)]="text"
+    (input)="onChange($event.target.value)"
+    >
+  
+  <div class="result">
+    {{ filteredText }}
+  </div>
+</main>
